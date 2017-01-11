@@ -1,0 +1,5 @@
+{
+  "db": {
+    "uri": "mongodb://relate:relate@ds035702.mlab.com:35702/relate-example-app"
+  }
+}

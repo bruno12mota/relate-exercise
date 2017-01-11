@@ -1,0 +1,53 @@
+@import '~styles/colors.less';
+
+.editor {
+  margin-top: 20px;
+
+  :global {
+    .DraftEditor-root {
+      border: 1px solid @borders;
+      padding: 20px 25px;
+      border-radius: 3px;
+    }
+
+    .public-DraftEditorPlaceholder-root {
+      color: @text;
+      position: absolute;
+      z-index: 0;
+    }
+
+    .public-DraftEditorPlaceholder-hasFocus {
+      color: @textSub;
+    }
+
+    .public-DraftEditor-content {
+      min-height: 100px;
+
+      &>div {
+        &>*:first-child {
+          margin-top: 0 !important;
+        }
+
+        &>*:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  &.focused {
+    :global {
+      .DraftEditor-root {
+        border-color: @primary;
+      }
+    }
+  }
+}
+
+.hidePlaceholder {
+  :global {
+    .public-DraftEditorPlaceholder-root {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '~styles/colors.less';
+@import '~styles/sizes.less';
+
+.root {
+  position: fixed;
+  top: 0;left: 0; bottom: 0;
+  z-index: 1;
+  background-color: #ffffff;
+
+  width: @menuWidth;
+  border-right: 1px solid @borders;
+}
+
+.content {
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  bottom: 69px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  height: 70px;
+  padding: 15px 10px;
+  border-top: 1px solid @borders;
+}

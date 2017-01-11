@@ -1,0 +1,54 @@
+@import '~styles/colors.less';
+@import '~styles/sizes.less';
+
+.root {
+  position: fixed;
+  top: 0;
+  left: @menuWidth;
+  right: 0;
+  bottom: 0;
+}
+
+.scrollArea {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  bottom: 70px;
+}
+
+.content {
+  padding: 40px 60px;
+}
+
+.footer {
+  position: absolute;
+
+  bottom: 0; left: 0; right: 0;
+  border-top: 1px solid @borders;
+  background-color: #ffffff;
+
+  height: 70px;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid @borders;
+  display: block;
+  width: 100%;
+  font-family: 'Lora';
+  font-weight: 800;
+  color: @textHighlight;
+
+  font-size: 34px;
+  margin-bottom: 30px;
+
+  &:focus {
+    border-color: @primary;
+  }
+}
+
+.editing {
+
+}

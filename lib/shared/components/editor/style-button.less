@@ -1,0 +1,25 @@
+@import '~styles/colors.less';
+
+.root {
+  display: inline-block;
+  vertical-align: top;
+
+  border: 1px solid @borders;
+  border-radius: 3px;
+  margin-right: 5px;
+
+  font-size: 13px;
+  padding: 5px 7px;
+
+  color: @textHighlight;
+  cursor: pointer;
+
+  &:hover {
+    border-color: @primary;
+  }
+
+  &.active {
+    color: @primary;
+    border-color: @primary;
+  }
+}

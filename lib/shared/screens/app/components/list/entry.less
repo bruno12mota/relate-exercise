@@ -1,0 +1,37 @@
+@import '~styles/colors.less';
+
+.root {
+  display: block;
+  padding: 20px 15px;
+  border-bottom: 1px solid @borders;
+  cursor: pointer;
+  border-right: 2px solid transparent;
+  text-decoration: none;
+
+  &:hover, &.active {
+    .title {
+      color: @primary;
+    }
+  }
+  &.active {
+    border-right: 2px solid @primary;
+    
+    .date {
+      color: @textNormal;
+    }
+  }
+}
+
+.title {
+  font-size: 17px;
+  font-family: 'Lora';
+  line-height: 20px;
+  color: @textHighlight;
+}
+
+.date {
+  font-size: 12px;
+  color: @text;
+  line-height: 14px;
+  margin-top: 3px;
+}
